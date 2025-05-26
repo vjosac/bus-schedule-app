@@ -3,6 +3,7 @@
     <string name="bus_stop_title">Bus Stop</string>
     <string name="back_button">Back</string>
     <string name="stop_name">Stop Name</string>
+    <string name="dash">--</string>
     <string name="arrival_time">Arrival Time</string>
     <string name="no_items">No items</string>
 </resources>

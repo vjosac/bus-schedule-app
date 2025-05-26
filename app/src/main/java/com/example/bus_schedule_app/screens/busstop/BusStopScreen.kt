@@ -149,16 +149,18 @@ private fun ScheduleItem(
     item: Schedule,
     modifier: Modifier = Modifier
 ) {
-    Row(modifier = modifier) {
+    Row(modifier = modifier,
+        horizontalArrangement = Arrangement.SpaceBetween) {
         Text(
-            text = item.stopName,
-            style = MaterialTheme.typography.titleLarge
+            text = stringResource(R.string.dash),
+            style = MaterialTheme.typography.titleLarge,
+            textAlign = TextAlign.Center,
+            modifier = Modifier.padding(start = dimensionResource(id = R.dimen.padding_extra_large))
         )
-        Spacer(Modifier.weight(1f))
         Text(
             text = item.arrivalTime.toAmPmTime(),
             style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
         )
     }
 }
